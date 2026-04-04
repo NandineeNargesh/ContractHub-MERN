@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { fetchSettings, updateSettings } from '../services/api';
-import { Settings as SettingsIcon, Bell, DollarSign, Shield } from 'lucide-react';
+import { Settings as Bell, DollarSign, Shield } from 'lucide-react';
 
 const Settings = () => {
     const [config, setConfig] = useState({
