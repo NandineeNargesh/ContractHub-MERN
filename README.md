@@ -45,13 +45,14 @@ Deployment: Netlify (Frontend) & Render (Backend).
 #⚙️ Local Setup Instructions
 1. Clone the repository
 Bash
-git clone https://github.com/NandineeNargesh/ContractHub-MERN.git
+git clone (https://github.com/NandineeNargesh/FinanceHub-MERN.git)
 cd ContractHub-MERN
 2. Backend Setup
 Bash
 cd server
 npm install
-# Create a .env file and add your MONGO_URI
+
+ Create a .env file and add your MONGO_URI
 npm start
 3. Frontend Setup
 Bash
