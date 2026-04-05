@@ -1,10 +1,14 @@
 import axios from 'axios';
 
-const API = axios.create({
-    baseURL: process.env.REACT_APP_API_URL, 
-});
 
+const API_URL = window.location.hostname === 'localhost' 
+    ? 'http://localhost:5000/api'  // Local link
+    : 'https://finance-z.onrender.com/api'; // Render link
 // GET: Transactions list
+
+const API = axios.create({
+    baseURL: API_URL,
+});
 export const fetchTransactions = () => API.get('/transactions/list');
 
 // POST: Create Transaction
